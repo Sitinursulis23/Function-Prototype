@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int a = 0;
+int b = 0;
+
+int perkalian(int aa, int aaa);
+int pertambahan(int bb, int bbb);
+int perkurangan(int cc, int ccc);
+int pembagian(int dd, int ddd);
+
+int main(){
+	int kali, tambah, kurang, bagi;
+	cout<<"Tentukan nilai Pertama\t\t\t\t= ";
+	cin>>a;
+	cout<<endl;
+	cout<<"Tentukan nilai Kedua\t\t\t\t= ";
+	cin>>b;
+	cout<<endl;
+	kali = perkalian(a,b);
+	tambah = pertambahan(a,b);
+	kurang = perkurangan(a,b);
+	bagi = pembagian(a,b);
+	cout<<"Hasil perkalian(x) dari "<<a<<" dan "<<b<<" adalah\t= "<<kali<<endl<<endl;
+	cout<<"Hasil pertambahan(+) dari "<<a<<" dan "<<b<<" adalah\t= "<<tambah<<endl<<endl;
+	cout<<"Hasil perkurangan(-) dari "<<a<<" dan "<<b<<" adalah\t= "<<kurang<<endl<<endl;
+	cout<<"Hasil pembagian(:) dari "<<a<<" dan "<<b<<" adalah\t= "<<bagi<<endl<<endl;
+	}
+	int perkalian(int aa, int aaa){
+		return aa*aaa;
+	}
+	int pertambahan(int bb, int bbb){
+		return bb+bbb;
+	}
+	int perkurangan(int cc, int ccc){
+		return cc-ccc;
+	}
+	int pembagian (int dd, int ddd){
+		return dd/ddd;
+	}
